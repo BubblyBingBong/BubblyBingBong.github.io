@@ -1,5 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0a0b0d"/>
-  <text x="32" y="43" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30"
-        font-weight="500" letter-spacing="-1.5" text-anchor="middle" fill="#6ee7b7">EK</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Turtle">
+  <rect width="64" height="64" rx="14" fill="#ffffff"/>
+
+  <!-- head, neck, flippers, tail -->
+  <g fill="#6aa87a">
+    <rect x="28.5" y="12" width="7" height="14" rx="3.5"/>
+    <circle cx="32" cy="10.5" r="6.8"/>
+    <ellipse cx="13.5" cy="25" rx="6.5" ry="4.4" transform="rotate(-35 13.5 25)"/>
+    <ellipse cx="50.5" cy="25" rx="6.5" ry="4.4" transform="rotate(35 50.5 25)"/>
+    <ellipse cx="14.5" cy="46" rx="6.5" ry="4.4" transform="rotate(35 14.5 46)"/>
+    <ellipse cx="49.5" cy="46" rx="6.5" ry="4.4" transform="rotate(-35 49.5 46)"/>
+    <path d="M32 48 l3.6 8.5 -7.2 0 z"/>
+  </g>
+
+  <!-- shell -->
+  <ellipse cx="32" cy="35" rx="20" ry="15.5" fill="#35734b"/>
+
+  <!-- scutes: dark grooves in the outer ring, hexagon at the centre -->
+  <g stroke="#24543a" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <line x1="39"   y1="35"   x2="51.6" y2="35"/>
+    <line x1="35.5" y1="41.1" x2="42"   y2="47.3"/>
+    <line x1="28.5" y1="41.1" x2="22"   y2="47.3"/>
+    <line x1="25"   y1="35"   x2="12.4" y2="35"/>
+    <line x1="28.5" y1="28.9" x2="22"   y2="22.7"/>
+    <line x1="35.5" y1="28.9" x2="42"   y2="22.7"/>
+  </g>
+  <path d="M39 35 L35.5 41.1 L28.5 41.1 L25 35 L28.5 28.9 L35.5 28.9 Z"
+        fill="#3d7d54" stroke="#24543a" stroke-width="1.6" stroke-linejoin="round"/>
 </svg>
