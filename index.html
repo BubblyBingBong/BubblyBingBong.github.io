@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethan Kou — Robot Foundation Models &amp; ML Systems</title>
+<meta name="description" content="Ethan Kou — EECS at UC Berkeley, research intern at NVIDIA GEAR and Berkeley AUTOLab. Robot foundation models, agentic pipelines, and ML systems.">
+<meta name="author" content="Ethan Kou">
+<link rel="canonical" href="https://bubblybingbong.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bubblybingbong.github.io/">
+<meta property="og:title" content="Ethan Kou — Robot Foundation Models &amp; ML Systems">
+<meta property="og:description" content="EECS at UC Berkeley. Research intern at NVIDIA GEAR and Berkeley AUTOLab. Robot foundation models, agentic pipelines, and ML systems.">
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" content="#0a0b0d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <nav class="topbar-inner" aria-label="Primary">
+    <a class="topbar-name" href="#top">Ethan&nbsp;Kou</a>
+    <ul class="topbar-links">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ─────────────────────────────  HERO  ───────────────────────────── -->
+  <section id="top" class="hero">
+    <p class="eyebrow reveal">Palo Alto &amp; Berkeley, CA</p>
+    <h1 class="reveal">Ethan Kou</h1>
+    <p class="hero-tagline reveal">
+      I build <strong>robot foundation models</strong> and the systems that train them.
+    </p>
+    <p class="hero-bio reveal">
+      EECS at UC Berkeley. Right now I'm a research intern at
+      <a href="https://research.nvidia.com/labs/gear/" target="_blank" rel="noopener">NVIDIA GEAR</a>,
+      leading a real-robot agentic pipeline for autoresearch on GR00T, and a robotics researcher at
+      <a href="https://autolab.berkeley.edu/" target="_blank" rel="noopener">Berkeley AUTOLab</a>,
+      where I work on code-as-policies methods for generalizable manipulation.
+      I like the stack end to end — from CUDA kernels and inference throughput up to
+      agents that decide what experiment to run next.
+    </p>
+    <ul class="hero-actions reveal">
+      <li><a class="btn btn-primary" href="mailto:ethankou@berkeley.edu">Email</a></li>
+      <li><a class="btn" href="https://github.com/BubblyBingBong" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a class="btn" href="#research">Publications</a></li>
+    </ul>
+  </section>
+
+  <!-- ───────────────────────────  RESEARCH  ─────────────────────────── -->
+  <section id="research" class="section">
+    <h2 class="section-title"><span class="section-num">01</span> Research</h2>
+
+    <ol class="pubs">
+      <li class="pub reveal">
+        <div class="pub-venue"><span class="badge badge-accent">ICML 2026</span><span class="pub-note">Main conference</span></div>
+        <h3 class="pub-title">
+          <a href="https://capgym.github.io/" target="_blank" rel="noopener">
+            CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation
+          </a>
+        </h3>
+        <p class="pub-authors">
+          Max Fu*, Justin Yu*, Karim El-Refai*, <strong>Ethan Kou*</strong>, Haoru Xue*, Huang Huang,
+          Wenli Xiao, Guanzhi Wang, Fei-Fei Li, Guanya Shi, Jiajun Wu, Shankar Sastry,
+          Yuke Zhu, Ken Goldberg, Linxi &ldquo;Jim&rdquo; Fan
+          <span class="pub-eq">*equal contribution</span>
+        </p>
+        <p class="pub-desc">
+          A code-as-policies method and benchmark for generalizable robot control, paired with an RL gym
+          for GRPO-based LLM training. I helped build the first benchmark for evaluating LLMs and VLMs on
+          embodied reasoning through robotic code generation, spanning multiple API abstractions and tasks
+          drawn from Robosuite, LIBERO, and BEHAVIOR — plus an agentic harness using a model ensemble and
+          skill library that outperforms SOTA models on it. In collaboration with Stanford, CMU, and NVIDIA.
+        </p>
+      </li>
+
+      <li class="pub reveal">
+        <div class="pub-venue"><span class="badge">Preprint</span></div>
+        <h3 class="pub-title">
+          <a href="https://research.nvidia.com/labs/gear/aspire/" target="_blank" rel="noopener">
+            ASPIRE: Agentic Skills Discovery for Robotics
+          </a>
+        </h3>
+        <p class="pub-authors">
+          Runyu Lu*, Yubo Wu*, <strong>Ethan Kou*</strong>, Letian Fu, Wenli Xiao, Ajay Mandlekar,
+          Yinzhen Xu, Guanya Shi, Ken Goldberg, Ang Chen, Mosharaf Chowdhury,
+          Yuke Zhu, Linxi &ldquo;Jim&rdquo; Fan, Guanzhi Wang
+          <span class="pub-eq">*equal contribution</span>
+        </p>
+      </li>
+
+      <li class="pub reveal">
+        <div class="pub-venue"><span class="badge">Open source</span><span class="pub-note">500+ downloads &middot; 10 citations</span></div>
+        <h3 class="pub-title">
+          <a href="https://github.com/BubblyBingBong/EKF" target="_blank" rel="noopener">
+            Extended Kalman Filter State Estimation for Autonomous Robots
+          </a>
+        </h3>
+        <p class="pub-authors"><strong>Ethan Kou*</strong>, Acshi Haggenmiller</p>
+        <p class="pub-desc">
+          A robotic simulator built on a self-derived kinematics motion model, with Jacobian-based EKF
+          covariance propagation for sensor fusion and Monte Carlo trials evaluating localization accuracy.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ──────────────────────────  EXPERIENCE  ────────────────────────── -->
+  <section id="experience" class="section">
+    <h2 class="section-title"><span class="section-num">02</span> Experience</h2>
+
+    <ol class="timeline">
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>Jun 2026 — Present</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">Research Intern <span class="entry-org">NVIDIA &mdash; GEAR</span></h3>
+          <ul class="entry-points">
+            <li>Leading a real-robot agentic pipeline enabling <strong>autoresearch</strong> for GR00T,
+                advised by Dr. Jim Fan and Prof. Yuke Zhu.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>Aug 2025 — Present</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">Undergraduate Robotics Researcher <span class="entry-org">Berkeley AI Research &mdash; AUTOLab</span></h3>
+          <ul class="entry-points">
+            <li>Co-first author on an accepted <strong>ICML 2026</strong> paper introducing a code-as-policies
+                method and benchmark for generalizable robot control, with an RL gym for GRPO LLM training.</li>
+            <li>Engineered an agentic harness using a model ensemble and skill library that outperforms
+                SOTA models on our benchmark.</li>
+            <li>Built low-level perception and control APIs on MuJoCo, PyRoki, GraspNet, SAM3, Owl-ViT, and Molmo.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>Jan 2026 — May 2026</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">Software Engineering Intern <span class="entry-org">NVIDIA &mdash; TensorRT-LLM</span></h3>
+          <ul class="entry-points">
+            <li>Profiled the <strong>KV-cache transceiver</strong> for LLM serving with Nsight Systems,
+                generating throughput–latency Pareto curves.</li>
+            <li>Fixed long-standing CI flakiness in the disaggregated serving pipeline across performance
+                and accuracy benchmarks.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>Feb 2026 — Apr 2026</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">Student Researcher <span class="entry-org">Google DeepMind</span></h3>
+          <ul class="entry-points">
+            <li>Applied <strong>AlphaEvolve</strong>, an evolutionary LLM search framework, to discover
+                optimized chip designs and kernels. Part-time, via an ML@B collaboration.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>Sep 2025 — Jan 2026</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">AI/ML Technical Project Lead <span class="entry-org">Qualcomm</span></h3>
+          <ul class="entry-points">
+            <li>Optimized diffusion inference with TensorRT-LLM and ONNX using <strong>w8a16 quantization</strong>
+                for edge and cloud deployment; authored the accompanying tech report.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>May 2025 — Aug 2025</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">Deep Learning &amp; Computer Vision Intern <span class="entry-org">Matterport</span></h3>
+          <ul class="entry-points">
+            <li>Enabled zero-shot <strong>open-vocabulary 3D semantic search</strong> by projecting DeCLIP
+                (CVPR '25) embeddings onto a mesh, scoring cosine similarity against text prompts, and
+                clustering high-similarity regions with DBSCAN.</li>
+            <li>Reached 0.5&thinsp;s real-time inference through vectorized computation and optimized
+                memory allocation.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry reveal">
+        <div class="entry-meta"><time>Sep 2024 — Jan 2026</time></div>
+        <div class="entry-body">
+          <h3 class="entry-role">Autonomous Driving Software Engineer <span class="entry-org">Formula Electric at Berkeley</span></h3>
+          <ul class="entry-points">
+            <li>Achieved a <strong>10&times; speedup</strong> in the perception pipeline with Graph SLAM,
+                fusing YOLO bounding boxes with LiDAR to localize track cones in 3D; used sparse matrices
+                for real-time solving.</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- ───────────────────────────  PROJECTS  ─────────────────────────── -->
+  <section id="projects" class="section">
+    <h2 class="section-title"><span class="section-num">03</span> Projects</h2>
+
+    <div class="cards">
+
+      <a class="card reveal" href="https://github.com/BubblyBingBong/gpt2" target="_blank" rel="noopener">
+        <div class="card-head">
+          <h3>Recreating GPT-2</h3>
+          <span class="card-date">2025 — Present</span>
+        </div>
+        <p>
+          A 400M-parameter model trained from scratch on 100B tokens of FineWeb-Edu. Roughly
+          3&times; lower memory through Flash Attention and grouped-query attention, trained with the
+          Muon optimizer, DDP across 8&times;A100, and mixed precision.
+        </p>
+        <ul class="tags"><li>PyTorch</li><li>Flash Attention</li><li>GQA</li><li>Muon</li><li>DDP</li></ul>
+      </a>
+
+      <div class="card reveal">
+        <div class="card-head">
+          <h3>MNIST Classifier in CUDA</h3>
+          <span class="card-date">2025</span>
+        </div>
+        <p>
+          A classifier written directly in CUDA, using fused kernels to cut latency and staging data
+          in SRAM to minimize HBM traffic.
+        </p>
+        <ul class="tags"><li>CUDA</li><li>Fused kernels</li><li>Memory hierarchy</li></ul>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-head">
+          <h3>Diffusion Image Generation</h3>
+          <span class="card-date">2025 — 2026</span>
+        </div>
+        <p>
+          DDPM reimplemented on TinyImageNet with an attention-augmented UNet, FiLM conditioning,
+          and an EMA model for stable sampling.
+        </p>
+        <ul class="tags"><li>DDPM</li><li>UNet</li><li>FiLM</li><li>EMA</li></ul>
+      </div>
+
+      <a class="card reveal" href="https://github.com/BubblyBingBong/GraphSLAM" target="_blank" rel="noopener">
+        <div class="card-head">
+          <h3>Graph SLAM</h3>
+          <span class="card-date">2024</span>
+        </div>
+        <p>
+          Sparse-matrix Graph SLAM for the Berkeley Formula Electric autonomous stack, fusing camera
+          detections and LiDAR into a consistent map of the track.
+        </p>
+        <ul class="tags"><li>SLAM</li><li>Sensor fusion</li><li>LiDAR</li><li>ROS2</li></ul>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ──────────────────────────  EDUCATION  ─────────────────────────── -->
+  <section id="education" class="section">
+    <h2 class="section-title"><span class="section-num">04</span> Education</h2>
+
+    <div class="edu reveal">
+      <div class="edu-head">
+        <h3>University of California, Berkeley</h3>
+        <time>Expected May 2028</time>
+      </div>
+      <p class="edu-degree">B.S. Electrical Engineering &amp; Computer Sciences &middot; GPA 3.98</p>
+      <p class="edu-courses">
+        <span class="label">Coursework</span>
+        Machine Learning &middot; Convex Optimization &middot; Data Structures &amp; Algorithms &middot;
+        Computer Architecture &middot; Probability &amp; Discrete Math &middot; Complexity Theory &middot;
+        Signals &amp; Systems &middot; Linear Algebra &middot; Differential Equations &middot; Circuits &amp; Devices
+      </p>
+      <ul class="honors">
+        <li><strong>ICPC Regionals</strong> &mdash; ranked #15</li>
+        <li><strong>AIME</strong> &mdash; score 7, top 25%, 4&times; qualifier</li>
+        <li><strong>AMC 12</strong> &mdash; top 5%</li>
+        <li><strong>VCIC</strong> &mdash; finalist</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────  SKILLS  ──────────────────────────── -->
+  <section id="skills" class="section">
+    <h2 class="section-title"><span class="section-num">05</span> Toolkit</h2>
+
+    <dl class="skills reveal">
+      <div class="skill-row">
+        <dt>Languages</dt>
+        <dd>Python &middot; C++ &middot; C &middot; CUDA &middot; Java &middot; TypeScript &middot; JavaScript &middot; SQL &middot; Bash</dd>
+      </div>
+      <div class="skill-row">
+        <dt>ML &amp; training</dt>
+        <dd>PyTorch &middot; JAX &middot; TensorFlow &middot; Hugging Face &middot; DDP &middot; sharding &middot; veRL &middot; reinforcement learning &middot; Weights &amp; Biases</dd>
+      </div>
+      <div class="skill-row">
+        <dt>Inference &amp; systems</dt>
+        <dd>TensorRT-LLM &middot; vLLM &middot; Triton &middot; ONNX &middot; quantization &middot; Nsight Systems &middot; Docker &middot; Kubernetes &middot; Ray</dd>
+      </div>
+      <div class="skill-row">
+        <dt>Robotics</dt>
+        <dd>ROS2 &middot; MuJoCo &middot; IsaacLab &middot; Gazebo &middot; PyRoki &middot; GraspNet &middot; SLAM &middot; CAD</dd>
+      </div>
+      <div class="skill-row">
+        <dt>Infra &amp; web</dt>
+        <dd>AWS (EC2, S3) &middot; Linux &middot; Git &middot; React &middot; Flask &middot; HTML/CSS</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ───────────────────────────  CONTACT  ──────────────────────────── -->
+  <section id="contact" class="section section-contact">
+    <h2 class="section-title"><span class="section-num">06</span> Get in touch</h2>
+    <p class="contact-lead reveal">
+      I'm always happy to talk about robot learning, inference systems, or research collaborations.
+    </p>
+    <ul class="contact-links reveal">
+      <li><a href="mailto:ethankou@berkeley.edu">ethankou@berkeley.edu</a></li>
+      <li><a href="https://github.com/BubblyBingBong" target="_blank" rel="noopener">github.com/BubblyBingBong</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year">2026</span> Ethan Kou</p>
+  <p class="footer-meta">Built by hand &middot; hosted on GitHub Pages</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal-on-scroll, skipped entirely when the user prefers reduced motion.
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var targets = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    targets.forEach(function (el) { io.observe(el); });
+  }
+</script>
+
+</body>
+</html>
