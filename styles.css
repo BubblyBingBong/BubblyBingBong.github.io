@@ -107,6 +107,18 @@ a.title:hover { text-decoration-color: var(--head); }
   color: var(--muted);
 }
 
+.venue {
+  margin: 0.1rem 0 0;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+.note {
+  margin: -0.75rem 0 1.5rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
 /* focus / a11y ------------------------------------------------------- */
 
 :focus-visible { outline: 2px solid var(--head); outline-offset: 2px; border-radius: 2px; }
